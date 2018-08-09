@@ -4,8 +4,10 @@ import Navigation from './Navigation';
 function Landing(props) {
   return (
     <div>
-      <Navigation login={true}/>
-      <h1>Landing</h1>
+      <header className="wrapper">
+        <Navigation login={true}/>
+        <h1>Hello, Welcome to Reactor</h1>
+      </header>
     </div>
   )
 }
