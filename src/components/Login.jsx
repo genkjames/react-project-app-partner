@@ -1,8 +1,12 @@
 import React from 'react';
+import Navigation from './Navigation';
 
 function Login(props) {
   return (
-    <h1>Login</h1>
+    <div>
+      <Navigation />
+      <h1>Login</h1>
+    </div>
   )
 }
 

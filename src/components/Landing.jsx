@@ -1,8 +1,12 @@
 import React from 'react';
+import Navigation from './Navigation';
 
 function Landing(props) {
   return (
-    <h1>Landing</h1>
+    <div>
+      <Navigation login={true}/>
+      <h1>Landing</h1>
+    </div>
   )
 }
 

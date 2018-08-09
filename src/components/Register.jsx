@@ -1,8 +1,12 @@
 import React from 'react';
+import Navigation from './Navigation';
 
 function Register(props) {
   return (
-    <h1>Register</h1>
+    <div>
+      <Navigation />
+      <h1>Register</h1>
+    </div>
   )
 }
 
