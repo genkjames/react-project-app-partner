@@ -1,6 +1,7 @@
 import React from 'react';
 import Navigation from './Navigation';
 import About from './About';
+import Article from './content/articles/Article';
 
 function Landing(props) {
   return (
@@ -10,6 +11,7 @@ function Landing(props) {
         <h1>Hello, Welcome to Reactor</h1>
       </header>
       <About />
+      <Article />
     </div>
   )
 }

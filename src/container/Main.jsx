@@ -2,8 +2,8 @@ import React from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
 
 import Landing from '../components/Landing';
-import Login from '../components/Login';
-import Register from '../components/Register';
+import Login from '../components/auth/Login';
+import Register from '../components/auth/Register';
 
 function Main(props) {
   return (
