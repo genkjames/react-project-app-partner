@@ -10,10 +10,11 @@ function Article(props) {
       heading={article.heading}
     />)
   })
+
   return (
-    <div>
+    <section className="articles">
       {articles}
-    </div>
+    </section>
   )
 }
 
