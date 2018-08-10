@@ -68,6 +68,7 @@ p {
 
 .top-navigation p {
   font-size: 18px;
+  color: white;
 }
 
 .top-navigation a {
@@ -89,7 +90,7 @@ header h1 {
 /* About Section */
 
 .about h4 {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   position: relative;
   width: 50%;
   left: 50%;
