@@ -1,5 +1,6 @@
 import React from 'react';
 import Navigation from './Navigation';
+import About from './About';
 
 function Landing(props) {
   return (
@@ -8,6 +9,7 @@ function Landing(props) {
         <Navigation login={true}/>
         <h1>Hello, Welcome to Reactor</h1>
       </header>
+      <About />
     </div>
   )
 }

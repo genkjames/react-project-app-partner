@@ -1,11 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+:root {
+  --dark-slate-blue: #1e3656;
+  --white: #fff;
+  --light-sage: #f1faef;
+  --faded-red: #e43c4b;
+  --gray: #d8d8d8;
+  --dull-blue: #487b9b;
+  --dark: #272727;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  font: 400 14px/21px "Roboto", sans-serif;
+  letter-spacing: 0.2px;
+  color: #354052;
+}
+
 .wrapper {
   padding: 20px 70px;
+}
+
+section.wrapper {
+  padding: 120px 70px;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 0.6px;
+  color: var(--white);
+  font: 700 50px "Roboto", sans-serif;
+}
+
+h2 {
+  letter-spacing: 0.4px;
+  color: var(--faded-red);
+  font: 700 32px "Roboto", sans-serif;
+}
+
+h4 {
+  color: var(--dark);
+  font: 500 18px "Roboto", sans-serif;
+}
+
+p {
+  font-size: 16px;
+  color: var(--dark-slate-blue);
 }
 
 /* Navigation */
@@ -18,6 +63,16 @@
   position: absolute;
   top: 0;
   left: 0;
+  letter-spacing: 0.5px;
+}
+
+.top-navigation p {
+  font-size: 18px;
+}
+
+.top-navigation a {
+  color: var(--white);
+  text-decoration: none;
 }
 
 /* Header Section */
@@ -28,7 +83,31 @@ header {
 }
 
 header h1 {
-  padding: 300px 70px;
+  padding: 260px 70px;
+}
+
+/* About Section */
+
+.about h4 {
+  margin-bottom: 25px;
+  position: relative;
+  width: 50%;
+  left: 50%;
+  padding-left: 40px;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-container > * {
+  flex: 50%;
+  padding: 0 40px;
+}
+
+.about-container h2 {
   text-align: center;
-  color: white;
+  text-transform: uppercase;
 }

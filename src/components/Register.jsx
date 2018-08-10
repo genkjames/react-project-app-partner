@@ -3,9 +3,9 @@ import Navigation from './Navigation';
 
 function Register(props) {
   return (
-    <div>
+    <div class="wrapper">
       <Navigation />
-      <h1>Register</h1>
+      <h2>Register</h2>
     </div>
   )
 }

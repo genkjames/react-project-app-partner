@@ -5,7 +5,7 @@ function Login(props) {
   return (
     <div>
       <Navigation />
-      <h1>Login</h1>
+      <h2>Login</h2>
     </div>
   )
 }
