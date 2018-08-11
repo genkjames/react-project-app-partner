@@ -2,6 +2,7 @@ import React from 'react';
 import Navigation from './Navigation';
 import About from './About';
 import Article from './content/articles/Article';
+import Location from './content/locations/Location';
 
 function Landing(props) {
   return (
@@ -14,6 +15,7 @@ function Landing(props) {
       </header>
       <About />
       <Article />
+      <Location />
     </div>
   )
 }

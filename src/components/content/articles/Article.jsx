@@ -3,7 +3,6 @@ import { connect } from "react-redux";
 import View from './View';
 
 function Article(props) {
-  console.log(props);
   const articles = props.articles.map(article => {
     return (<View 
       key={article.heading}
@@ -14,7 +13,7 @@ function Article(props) {
 
   return (
     <div className="articles">
-      <section className="wrapper">
+      <section className="wrapper content">
         {articles}
       </section>
     </div>

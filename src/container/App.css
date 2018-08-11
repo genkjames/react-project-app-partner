@@ -28,10 +28,6 @@ body {
   padding: 20px 40px;
 }
 
-section.wrapper {
-  padding: 120px 40px;
-}
-
 h1 {
   text-align: center;
   letter-spacing: 0.6px;
@@ -56,6 +52,10 @@ p {
   color: var(--dark-slate-blue);
 }
 
+.content {
+  padding: 120px 40px;
+}
+
 /* Navigation */
 
 .top-navigation {
@@ -64,6 +64,7 @@ p {
   color: white;
   width: 100%;
   letter-spacing: 0.5px;
+  padding: 0 40px;
 }
 
 .top-navigation p {
