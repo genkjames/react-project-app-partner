@@ -23,11 +23,13 @@ body {
 }
 
 .wrapper {
-  padding: 20px 70px;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 20px 40px;
 }
 
 section.wrapper {
-  padding: 120px 70px;
+  padding: 120px 40px;
 }
 
 h1 {
@@ -43,9 +45,10 @@ h2 {
   font: 700 32px "Roboto", sans-serif;
 }
 
-h4 {
+h5 {
   color: var(--dark);
   font: 500 18px "Roboto", sans-serif;
+  margin-bottom: 20px;
 }
 
 p {
@@ -60,9 +63,6 @@ p {
   justify-content: space-between;
   color: white;
   width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
   letter-spacing: 0.5px;
 }
 
@@ -79,18 +79,17 @@ p {
 /* Header Section */
 
 header {
-  background: url('../images/banner.png') center no-repeat;
+  background: url('/images/banner.png') center no-repeat;
   background-size: cover;
 }
 
 header h1 {
-  padding: 260px 70px;
+  padding: 260px 0;
 }
 
 /* About Section */
 
-.about h4 {
-  margin-bottom: 20px;
+.about h5 {
   position: relative;
   width: 50%;
   left: 50%;
@@ -116,5 +115,27 @@ header h1 {
 /* Articles Section */
 
 .articles {
-  
+  background-color: var(--light-sage);
+}
+
+.articles > section {
+  display: flex;
+}
+
+.article {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.article img {
+  width: 200px;
+  height: 200px;
+  box-shadow: 1px 1px 30px 10px var(--gray);
+}
+
+.article div {
+  width: calc(100% - 200px);
+  padding: 0 40px 0 50px;
 }

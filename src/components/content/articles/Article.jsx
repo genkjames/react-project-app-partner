@@ -6,15 +6,17 @@ function Article(props) {
   const articles = props.articles.map(article => {
     return (<View 
       key={article.heading}
-      image={article.img}
+      image={article.img_path}
       heading={article.heading}
     />)
   })
 
   return (
-    <section className="articles">
-      {articles}
-    </section>
+    <div className="articles">
+      <section className="wrapper">
+        {articles}
+      </section>
+    </div>
   )
 }
 

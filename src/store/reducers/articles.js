@@ -3,11 +3,11 @@ import { GET_ARTICLES } from '../actionTypes';
 const initialState = {
   articles: [
     {
-      img: "",
+      img_path: "/images/1.png",
       heading: "Regional Cuisine Down Home Southern Cooking"
     },
     {
-      img: "",
+      img_path: "../../../images/2.png",
       heading: "Pos Hardware More Options In Less Space"
     }
   ]
