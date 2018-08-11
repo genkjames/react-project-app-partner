@@ -206,3 +206,34 @@ footer > p {
   color: var(--white);
   text-align: center;
 }
+
+.footer form {
+  max-width: 500px;
+  position: relative;
+  margin: 45px auto 0;
+}
+
+.footer form > * {
+  padding: 20px;
+  display: inline-block;
+   outline: 1px solid transparent;
+}
+
+.footer input {
+  width: 100%;
+  border: 1px solid var(--gray);
+  padding-right: 170px;
+  color: var(--dark-slate-blue);
+  border-radius: 5px 30px 30px 5px;
+  font: 500 14px "Roboto", sans-serif;
+}
+
+.footer button {
+  font: 500 14px "Roboto", sans-serif;
+  background: var(--dark-slate-blue);
+  border-radius: 30px;
+  width: 160px;
+  color: var(--white);
+  position: absolute;
+  right: 0;
+}

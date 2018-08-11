@@ -32,6 +32,7 @@ class Subscribe extends Component {
             type="email"
             value={this.state.email}
             name="email"
+            placeholder="Your Email"
           />
           <button>Subscribe</button>
         </form>
