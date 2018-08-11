@@ -17,9 +17,11 @@ function Location(props) {
   })
   return (
     <div>
-      <section className="wrapper">
+      <section className="wrapper locations">
         <h3>Maui By Air The Best Way Around The Island</h3>
-        {locations}
+        <div>
+          {locations}
+        </div>
       </section>
     </div>
   )

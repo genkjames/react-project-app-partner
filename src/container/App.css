@@ -22,6 +22,8 @@ body {
   color: #354052;
 }
 
+/* General Styles */
+
 .wrapper {
   max-width: 1600px;
   margin: 0 auto;
@@ -39,17 +41,37 @@ h2 {
   letter-spacing: 0.4px;
   color: var(--faded-red);
   font: 700 32px "Roboto", sans-serif;
+  text-align: center;
+}
+
+h3 {
+  letter-spacing: 0.3px;
+  color: var(--dark);
+  font: 700 24px "Roboto", sans-serif;
+}
+
+h4 {
+  letter-spacing: 0.2px;
+  color: var(--dark);
+  font: 500 20px "Roboto", sans-serif;
+  margin-bottom: 20px;
 }
 
 h5 {
-  color: var(--dark);
-  font: 500 18px "Roboto", sans-serif;
-  margin-bottom: 20px;
+  letter-spacing: 0.2px;
+  color: #413d3d;
+  font: 700 18px "Roboto", sans-serif;
+  text-align: center;
 }
 
 p {
   font-size: 16px;
   color: var(--dark-slate-blue);
+}
+
+img {
+  width: 200px;
+  height: 200px;
 }
 
 .content {
@@ -90,7 +112,7 @@ header h1 {
 
 /* About Section */
 
-.about h5 {
+.about h4 {
   position: relative;
   width: 50%;
   left: 50%;
@@ -131,12 +153,41 @@ header h1 {
 }
 
 .article img {
-  width: 200px;
-  height: 200px;
   box-shadow: 1px 1px 30px 10px var(--gray);
 }
 
 .article div {
   width: calc(100% - 200px);
   padding: 0 40px 0 50px;
+}
+
+/* Locations Section */
+
+.locations {
+  padding: 60px 40px;
+}
+
+.locations > div {
+  display: flex;
+  justify-content: center;
+}
+
+.locations h3 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.location {
+  padding: 0 20px 20px;
+}
+
+.location h5 {
+  margin: 20px 0 8px;
+}
+
+
+.caption {
+  text-align: center;
+  font: 500 14px "Roboto", sans-serif;
+  color: #7c7c7c;
 }

@@ -9,7 +9,7 @@ const initialState = {
     },
     {
       img_path: "/images/4.png",
-      location: "South Christopherport",
+      location: "South Cristopherport",
       address: "162 Chandler Ville"
     },
     {
@@ -18,7 +18,7 @@ const initialState = {
       address: "7643 Kylie Burgs"
     },
     {
-      img_path: "/images/5.png",
+      img_path: "/images/6.png",
       location: "Reychester",
       address: "5590 Gabe View Apt. 044"
     }

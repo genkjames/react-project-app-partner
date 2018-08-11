@@ -7,7 +7,7 @@ function View(props) {
     <div className="article">
       <img src={image} alt={heading} />
       <div>
-        <h5>{heading}</h5>
+        <h4>{heading}</h4>
         <p>The quick brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Jump MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs.</p>
       </div>
     </div>
