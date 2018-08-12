@@ -3,6 +3,30 @@ import Navigation from '../Navigation';
 import { Link } from 'react-router-dom';
 
 class Form extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      username: "",
+      email: "",
+      password: ""
+    }
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleChange(e) {
+    const { value, name } = e.target;
+    this.setState({
+      [name]: value
+    })
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
+    console.log(this.state)
+  }
+
+
   render() {
     return (
       <div className="signup-login">
@@ -10,22 +34,31 @@ class Form extends Component {
           <Navigation />
           <div className="login-inputs">
             <nav>
-              <Link to="/register">Sign Up</Link>
-              <Link to="/login">Login</Link>
+              <Link to="/register" className="register-link">Sign Up</Link>
+              <Link to="/login" className="login-link">Login</Link>
             </nav>
-            <form>
-              {this.props.label === "Register" && 
+            <form onSubmit={this.handleSubmit}>
+              {this.props.label === "Sign Up" && 
               <input 
                 type="text"
                 placeholder="Username"
+                onChange={this.handleChange}
+                value={this.state.username}
+                name="username"
               />}
               <input 
                 type="email"
                 placeholder="Email"
+                onChange={this.handleChange}
+                value={this.state.email}
+                name="email"
               />
               <input 
                 type="password"
                 placeholder="Password"
+                onChange={this.handleChange}
+                value={this.state.password}
+                name="password"
               />
               <button>{this.props.label}</button>
             </form>

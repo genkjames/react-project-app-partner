@@ -252,25 +252,48 @@ footer > p {
   padding: 20px 0 50px;
 }
 
+.login-inputs nav {
+  margin-bottom: 45px;
+}
+
+.login-inputs a {
+  display: inline-block;
+  width: 50%;
+  font: 500 20px "Roboto", sans-serif;
+  text-decoration: none;
+  color: var(--gray);
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.login .login-link, .register .register-link {
+  color: var(--white);
+  text-decoration: underline;
+}
+
 .login-inputs input, .login-inputs button {
   display: block;
   width: 100%;
-  padding: 15px;
+  padding: 18px;
   border: none;
-  border-radius: 30px;
+  border-radius: 40px;
   margin: 20px 0;
+  font: 400 15px "Roboto", sans-serif;
+  outline: 1px solid transparent;
 }
 
 .login-inputs input {
   background: rgba(30, 54, 86, .2);
+  color: var(--white);
 }
 
 .login-inputs input::placeholder {
-  color: var(--light-sage);
+  color: rgba(216, 216, 216, .6);
 }
 
 .login-inputs button {
   background: var(--faded-red);
   color: var(--white);
   text-transform: uppercase;
+  margin: 45px 0;
 }

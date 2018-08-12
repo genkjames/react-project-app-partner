@@ -5,7 +5,7 @@ function Register(props) {
   return (
     <div className="register">
       <Form
-        label="Register"
+        label="Sign Up"
       />
     </div>
   )
