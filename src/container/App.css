@@ -67,7 +67,7 @@ h5 {
 
 p {
   font-size: 16px;
-  color: var(--dark-slate-blue);
+  color: var(--dull-blue);
 }
 
 img {
@@ -246,6 +246,31 @@ footer > p {
   background-size: cover;
 }
 
-.signup-login form {
-  height: 1000px;
+.login-inputs {
+  max-width: 300px;
+  margin: 200px auto 0;
+  padding: 20px 0 50px;
+}
+
+.login-inputs input, .login-inputs button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 30px;
+  margin: 20px 0;
+}
+
+.login-inputs input {
+  background: rgba(30, 54, 86, .2);
+}
+
+.login-inputs input::placeholder {
+  color: var(--light-sage);
+}
+
+.login-inputs button {
+  background: var(--faded-red);
+  color: var(--white);
+  text-transform: uppercase;
 }

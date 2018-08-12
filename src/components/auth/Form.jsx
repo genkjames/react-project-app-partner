@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Navigation from '../Navigation';
+import { Link } from 'react-router-dom';
 
 class Form extends Component {
   render() {
@@ -7,21 +8,27 @@ class Form extends Component {
       <div className="signup-login">
         <div className="wrapper">
           <Navigation />
-          <form>
-            <input 
-              type="text"
-              placeholder="Username"
-            />
-            <input 
-              type="email"
-              placeholder="Email"
-            />
-            <input 
-              type="password"
-              placeholder="Password"
-            />
-            <button>{this.props.label}</button>
-          </form>
+          <div className="login-inputs">
+            <nav>
+              <Link to="/register">Sign Up</Link>
+              <Link to="/login">Login</Link>
+            </nav>
+            <form>
+              <input 
+                type="text"
+                placeholder="Username"
+              />
+              <input 
+                type="email"
+                placeholder="Email"
+              />
+              <input 
+                type="password"
+                placeholder="Password"
+              />
+              <button>{this.props.label}</button>
+            </form>
+          </div>
         </div>
       </div>
     )
