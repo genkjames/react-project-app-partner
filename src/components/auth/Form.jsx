@@ -39,27 +39,33 @@ class Form extends Component {
             </nav>
             <form onSubmit={this.handleSubmit}>
               {this.props.label === "Sign Up" && 
-              <input 
-                type="text"
-                placeholder="Username"
-                onChange={this.handleChange}
-                value={this.state.username}
-                name="username"
-              />}
-              <input 
-                type="email"
-                placeholder="Email"
-                onChange={this.handleChange}
-                value={this.state.email}
-                name="email"
-              />
-              <input 
-                type="password"
-                placeholder="Password"
-                onChange={this.handleChange}
-                value={this.state.password}
-                name="password"
-              />
+              <div className="username inputs">
+                <input 
+                  type="text"
+                  placeholder="Username"
+                  onChange={this.handleChange}
+                  value={this.state.username}
+                  name="username"
+                />
+              </div>}
+              <div className="email inputs">
+                <input 
+                  type="email"
+                  placeholder="Email"
+                  onChange={this.handleChange}
+                  value={this.state.email}
+                  name="email"
+                />
+              </div>
+              <div className="password inputs">
+                <input 
+                  type="password"
+                  placeholder="Password"
+                  onChange={this.handleChange}
+                  value={this.state.password}
+                  name="password"
+                />
+              </div>
               <button>{this.props.label}</button>
             </form>
           </div>

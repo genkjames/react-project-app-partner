@@ -259,7 +259,7 @@ footer > p {
 .login-inputs a {
   display: inline-block;
   width: 50%;
-  font: 500 20px "Roboto", sans-serif;
+  font: 400 20px "Roboto", sans-serif;
   text-decoration: none;
   color: var(--gray);
   letter-spacing: 0.4px;
@@ -277,18 +277,20 @@ footer > p {
   padding: 18px;
   border: none;
   border-radius: 40px;
-  margin: 20px 0;
   font: 400 15px "Roboto", sans-serif;
   outline: 1px solid transparent;
 }
 
 .login-inputs input {
   background: rgba(30, 54, 86, .2);
-  color: var(--white);
+  color: var(--gray);
+  letter-spacing: 0.4px;
+  padding-left: 50px;
 }
 
 .login-inputs input::placeholder {
-  color: rgba(216, 216, 216, .6);
+  color: rgba(216, 216, 216, .5);
+  letter-spacing: 0.4px;
 }
 
 .login-inputs button {
@@ -296,4 +298,45 @@ footer > p {
   color: var(--white);
   text-transform: uppercase;
   margin: 45px 0;
+}
+
+.inputs {
+  position: relative;
+  margin: 20px 0;
+}
+
+.username::before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 50px;
+  background: url('/images/ic-username.png') no-repeat center;
+  background-size: 30px 30px;
+  position: absolute;
+  top: 0;
+  left: 1px;
+}
+
+.email::before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 50px;
+  background: url('/images/ic-email.png') no-repeat center;
+  background-size: 30px 30px;
+  position: absolute;
+  top: 0;
+  left: 1px;
+}
+
+.password::before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 50px;
+  background: url('/images/ic-password.png') no-repeat center;
+  background-size: 30px 30px;
+  position: absolute;
+  top: 0;
+  left: 1px;
 }
