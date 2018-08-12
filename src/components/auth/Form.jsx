@@ -14,10 +14,11 @@ class Form extends Component {
               <Link to="/login">Login</Link>
             </nav>
             <form>
+              {this.props.label === "Register" && 
               <input 
                 type="text"
                 placeholder="Username"
-              />
+              />}
               <input 
                 type="email"
                 placeholder="Email"
