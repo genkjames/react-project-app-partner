@@ -1,11 +1,12 @@
 import React from 'react';
-import Navigation from '../Navigation';
+import Form from './Form';
 
 function Register(props) {
   return (
-    <div class="wrapper">
-      <Navigation />
-      <h2>Register</h2>
+    <div className="register">
+      <Form
+        label="Register"
+      />
     </div>
   )
 }

@@ -1,11 +1,12 @@
 import React from 'react';
-import Navigation from '../Navigation';
+import Form from './Form';
 
 function Login(props) {
   return (
-    <div>
-      <Navigation />
-      <h2>Login</h2>
+    <div className="login">
+      <Form 
+        label="Login"
+      />
     </div>
   )
 }
