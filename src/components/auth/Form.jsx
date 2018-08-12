@@ -23,13 +23,11 @@ class Form extends Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    console.log(this.state)
     this.props.handleSubmit(this.state).then(data => console.log(data));
   }
 
 
   render() {
-    console.log(this.props);
     return (
       <div className="signup-login">
         <div className="wrapper">

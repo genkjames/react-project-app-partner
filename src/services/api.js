@@ -14,8 +14,6 @@ function subscribe(email) {
 }
 
 function register(user) {
-  console.log('register');
-  console.log(user);
   const data = new FormData();
 
   for (let i in user) {
@@ -32,8 +30,19 @@ function register(user) {
 }
 
 function login(user) {
-  console.log('login')
-  console.log(user);
+  const data = new FormData();
+
+  for (let i in user) {
+    data.append(i, user[i]);
+  }
+
+  const options = {
+    method: 'POST',
+    body: data
+  }
+
+  return fetch('http://dev3.apppartner.com/Reactors/scripts/user-login.php', options)
+  .then(resp => resp.json());
 }
 
 export default {
