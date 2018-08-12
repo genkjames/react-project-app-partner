@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import services from '../../services/api';
 
 class Subscribe extends Component {
   constructor(props) {
@@ -20,7 +21,7 @@ class Subscribe extends Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    console.log(this.state.email);
+    services.subscribe(this.state).then(data => console.log(data));
   }
 
   render() {
